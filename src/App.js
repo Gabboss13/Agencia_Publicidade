@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React, { Component } from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Center from './components/Center/Center.jsx'
+import Header from './components/Header/Header.jsx'
+import Form from './components/Form/Form.jsx';
+import NotFound from './components/NotFound/NotFound.jsx'
+import Contact from './components/Contact/Contact';
+import Products from './components/Products/Products';
+// import api from './services/api';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component{
+  render() {
+    return (
+      <div>
+          <Router>
+            <Header />
+            <Routes>
+                <Route path= "/" element= {
+                    <Center> 
+                        {/* <Logo /> */}
+                   </Center>
+                }/>
+                <Route path= "/produtos" element={<Products />} />
+                <Route path= "/cadastro" element={<Form />} />
+                <Route path= "/signup" element={
+                    <Center>
+                        <h1>Sign In</h1>
+                    </Center>
+                } />
+                <Route path= "/contato" element ={<Contact /> } />
+                <Route path="/*"element={<NotFound />} />
+            </Routes> 
+          </Router>
+      </div>
+     
+    );
+  }
 }
-
-export default App;

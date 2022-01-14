@@ -1,0 +1,22 @@
+.mainHeader {
+    background-color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 15x;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.mainHeader .Link {
+    transition: .4s ease color;
+    text-decoration: none;
+    text-emphasis: none;
+    
+    
+}
