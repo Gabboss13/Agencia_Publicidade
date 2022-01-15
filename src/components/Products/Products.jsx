@@ -7,7 +7,7 @@ import Product4 from '../../assets/images/Product4.jpg';
 
 export default () =>{
     return(
-        <div class="container">
+        <div class="container-products">
   <div class="box">
     <img src={Product8} alt="..." />
     <div className="overlay">Gerenciamento, planejamento, criação e divulgação em mídias sociais. </div>

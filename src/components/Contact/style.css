@@ -1,9 +1,4 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Exo;
-  } */
+
 
   .main{
     width: 100%;
@@ -60,7 +55,6 @@
   }
 
   .profile-card .img{
-    /* position: relative; */
     width: 100%;
     height: 100%;
     transition: .6s;
