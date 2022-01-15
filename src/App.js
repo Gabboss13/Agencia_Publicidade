@@ -7,6 +7,7 @@ import Form from './components/Form/Form.jsx';
 import NotFound from './components/NotFound/NotFound.jsx'
 import Contact from './components/Contact/Contact';
 import Products from './components/Products/Products';
+import Login from './components/Login/Login';
 // import api from './services/api';
 
 export default class App extends Component{
@@ -23,11 +24,7 @@ export default class App extends Component{
                 }/>
                 <Route path= "/produtos" element={<Products />} />
                 <Route path= "/cadastro" element={<Form />} />
-                <Route path= "/signup" element={
-                    <Center>
-                        <h1>Sign In</h1>
-                    </Center>
-                } />
+                <Route path= "/signup" element={<Login />} />
                 <Route path= "/contato" element ={<Contact /> } />
                 <Route path="/*"element={<NotFound />} />
             </Routes> 
