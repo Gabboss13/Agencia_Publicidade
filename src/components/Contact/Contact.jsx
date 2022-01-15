@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './style.css'
 import avatar1 from '../../assets/images/avatar1.jpg'
@@ -9,7 +10,7 @@ export default function Contact() {
   return (
     <><div class="main">
       <div className='titulo'>
-        <h2> Conheça o nosso time!</h2>
+        <h1> Conheça o nosso time!</h1>
       </div>
       <div className="persona1">
         <div class="profile-card">
@@ -46,25 +47,25 @@ export default function Contact() {
       </div>
     </div>
       <div class="box">
+      <h2>Alguma dúvida ou sugestão, entre em contato!</h2>
         <form nome="contact" method="GET">
           <section class="grid">
-            <div class="camp">
-              <label>Nome: </label>
-              <input type="text" name="name" ></input>
-            </div>
-            <div class="camp">
-            <label>E-mail: </label>
-              <input type="text" name="email" placeholder="you@example.com" />
-            </div>
-              <div class="camp">
-            <h4>Mensagem:</h4>
-            </div>
-            <div class="camp">
-              <textarea rows="8" cols="50" name="mensagem" id="coment" maxlength="300" minlength="20"></textarea>
-            </div>
-            <div class="camp">
+            
+          <fieldset> 
+                    <input type="text" placeholder="Nome"  name="nome" />
+                </fieldset>
+                <fieldset> 
+                    <input type="text" placeholder="Assunto"  name="assunto" />
+                </fieldset>
+                <fieldset>
+                     <input type="text" placeholder='Email' name= "email" />
+                </fieldset>
+                <fieldset>
+              <textarea rows="8" cols="50" name="mensagem" id="coment" maxlength="300" minlength="20"placeholder="Digite s sua mensagem aqui!"></textarea>
+              </fieldset>
+              <fieldset>
               <button type="submit">Enviar</button>
-            </div>
+              </fieldset>
           </section>
         </form>
       </div></>
