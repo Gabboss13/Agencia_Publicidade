@@ -17,16 +17,21 @@ useEffect(async () => {
     setClients(response.data.clients)
 }, []) 
 
-function deleteClient() {
-    axios
-      .delete(` /clients/${clients.id}`)
-      .then(() => {
-        alert("Cliente Deletado!");
-        setClients(null)
-      });
-  }
+const deleteClient = async id => {
 
-  if (!clients) return "Nenhum Cliente Registrado!"
+    await api.delete(
+     `/clients/${id}`
+    )
+   
+     const response = await api.get('/clients');
+    
+     setClients(response.data.clients)
+}
+
+  
+
+
+
 
 
     
@@ -65,7 +70,7 @@ function deleteClient() {
                         {cliente.observations}
                     </h3> 
                     
-                    <button className='btn-card' > Deletar </button>
+                    <button className='btn-card' onClick={() =>deleteClient(cliente.id)} > Deletar </button>
                    <button className='btn-card'> Atualizar </button>
                 </li>
             ))}
