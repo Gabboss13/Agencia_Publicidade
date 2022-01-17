@@ -7,11 +7,12 @@ export const StyledForm = styled.div`
     background-size: cover;
     
     .box3 {
-    width: 40%;
+    width: 50%;
     padding: 20px;
     box-shadow: 0 0 5px 0 ;
-    margin: 30px auto 30px 30px;
+    margin: 10%  25% ;
     background-color: rgba(67, 38, 58, 0.8);
+    border-radius:10px;
     }
 
     fieldset{
@@ -21,7 +22,7 @@ export const StyledForm = styled.div`
   
     .input-form{
         border: none;
-        border-radius: 2px;
+        border-radius: 10px;
         width: 100%;
         height: 35px;
         transition: 0.2s;

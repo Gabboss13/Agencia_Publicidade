@@ -1,36 +1,34 @@
 import './App.css'
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Center from './components/Center/Center.jsx'
-import Header from './components/Header/Header.jsx'
-import Form from './components/Form/Form.jsx';
-import NotFound from './components/NotFound/NotFound.jsx'
-import Contact from './components/Contact/Contact';
-import Products from './components/Products/Products';
-import Login from './components/Login/Login';
+import Navbar from './components/NavBar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages';
+import { FooterContainers } from './Containers/footer';
+import About from "./pages/about";
+import Services from "./pages/service";
+import Contact from "./pages/contact";
+import Sign from "./pages/sign";
+import SignUp from "./pages/signup";
 
 
 export default class App extends Component{
   render() {
     return (
-      <div>
-          <Router>
-            <Header />
-            <Routes>
-                <Route path= "/" element= {
-                    <Center> 
-                        {/* <Logo /> */}
-                   </Center>
-                }/>
-                <Route path= "/produtos" element={<Products />} />
-                <Route path= "/cadastro" element={<Form />} />
-                <Route path= "/signup" element={<Login />} />
-                <Route path= "/contato" element ={<Contact /> } />
-                <Route path="/*"element={<NotFound />} />
-            </Routes> 
-          </Router>
-          {/* <Footer /> */}
-      </div>
+    
+          <div className="App">
+            <Router>
+                <Navbar />
+                <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/services" element={<Services/>}/>
+                <Route path="/Contact" element={<Contact/>}/>
+                <Route path="/sign-up" element={<Sign/>}/>
+                <Route path="/signin" element={<SignUp/>}/>
+                </Routes>
+            </Router>
+            <FooterContainers />
+        </div>
      
     );
   }

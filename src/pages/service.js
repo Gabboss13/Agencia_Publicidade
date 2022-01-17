@@ -1,13 +1,21 @@
 import React from "react";
-import "./Products.css"
-import Product8 from '../../assets/images/Product8.jpg';
-import Product10 from '../../assets/images/Product10.jpg';
-import Product11 from '../../assets/images/Product11.jpg';
-import Product4 from '../../assets/images/Product4.jpg';
+import "../components/Products/Products.css"
+import Product8 from '../assets/images/Product8.jpg';
+import Product10 from '../assets/images/Product10.jpg';
+import Product11 from '../assets/images/Product11.jpg';
+import Product4 from '../assets/images/Product4.jpg';
 
-export default () =>{
-    return(
-        <div class="container-products">
+const Services = () => {
+    return (
+        <div style={{
+
+            
+
+        }}>
+
+
+
+<div class="container-products">
   <div class="box">
     <img src={Product8} alt="..." />
     <div className="overlay">Gerenciamento, planejamento, criação e divulgação em mídias sociais. </div>
@@ -29,5 +37,8 @@ export default () =>{
     <span>Assessoria</span>
   </div>
 </div>
-    )
-}
+        </div>
+    );
+};
+
+export default Services;

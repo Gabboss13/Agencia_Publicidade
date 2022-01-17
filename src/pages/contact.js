@@ -1,13 +1,14 @@
-import React from 'react'
-import './style.module.css'
-import avatar1 from '../../assets/images/avatar1.jpg'
-import avatar2 from '../../assets/images/avatar2.jpg'
-import avatar3 from '../../assets/images/avatar3.jpg'
+import React from "react";
+import avatar1 from '../assets/images/avatar1.jpg'
+import avatar2 from '../assets/images/avatar2.jpg'
+import avatar3 from '../assets/images/avatar3.jpg'
+const Contact = () => {
+    return (
+        <div style={{
 
 
-export default function Contact (){
- return (
-   <div class="main-contact">
+        }}>
+             <div class="main-contact">
        <div className='titulo'>
        <h1> Conheça o nosso time!</h1>
        </div>
@@ -45,6 +46,10 @@ export default function Contact (){
       </div>
      </div>
    </div>
- );
-}
 
+
+        </div>
+    );
+};
+
+export default Contact;

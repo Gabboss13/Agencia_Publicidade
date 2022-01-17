@@ -1,15 +1,20 @@
-import React, { Component } from 'react'
-import { StyledForm } from './Form'
+import React from "react";
+import { StyledForm } from '../components/Form/Form'
 
 
 
-export default class Form extends Component {
-    
+const Sign = () => {
 
-    render(){
+    return (
+        <div style={{
 
-        return (
-            <StyledForm >
+            
+
+        }}>
+
+
+
+<StyledForm >
                 <div className='box3'>
                 <h1> Como podemos ajudar?? </h1>
                  <form>
@@ -43,22 +48,18 @@ export default class Form extends Component {
                 
             </form>
             <div className='box4'>
-                {/* <Button type='submit'>
+                {/* <Button onClick type='submit'>
                     Resolve aí!
-                </Button>  */}
+                </Button> */ }
                 <div>
-                    <p>Já é cadastrado?<a href='../pages/sign.js'> Entra aí!</a></p> 
+                    <p>Já é cadastrado?<a href="#"> Entra aí!</a></p> 
                 </div>
                 <small>Ao criar o seu cadastro, você concorda com a nossa Política de Privacidade.</small>
             </div>
                 </div>
             </StyledForm>
-           // ATENÇÃO!!!!! lembrar de colocar o caminho da página signin no href acima!!!!
-        )
-    }
-}
+        </div>
+    );
+};
 
-//validar o formulário
-//conectar a API
-//Hover
-//botão submit
+export default Sign;
