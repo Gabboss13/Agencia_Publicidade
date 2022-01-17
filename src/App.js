@@ -8,7 +8,7 @@ import NotFound from './components/NotFound/NotFound.jsx'
 import Contact from './components/Contact/Contact';
 import Products from './components/Products/Products';
 import Login from './components/Login/Login';
-// import api from './services/api';
+
 
 export default class App extends Component{
   render() {
@@ -29,6 +29,7 @@ export default class App extends Component{
                 <Route path="/*"element={<NotFound />} />
             </Routes> 
           </Router>
+          {/* <Footer /> */}
       </div>
      
     );
