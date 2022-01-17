@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.module.css'
 import avatar1 from '../../assets/images/avatar1.jpg'
 import avatar2 from '../../assets/images/avatar2.jpg'
 import avatar3 from '../../assets/images/avatar3.jpg'
@@ -7,7 +7,7 @@ import avatar3 from '../../assets/images/avatar3.jpg'
 
 export default function Contact (){
  return (
-   <div class="main">
+   <div class="main-contact">
        <div className='titulo'>
        <h1> Conheça o nosso time!</h1>
        </div>

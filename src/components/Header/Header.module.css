@@ -1,22 +1,31 @@
-.mainHeader {
-    background-color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
+@font-face {
+    font-family: 'Effra Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Effra Medium'), url('../../assets/fonts/Effra\ Medium.woff') format('woff');
+    }
+
+.mainHeader { 
+    background-color:  rgba(67, 38, 58, 0.8);
     color: var(--black);
-    font-size: 15x;
+    font-family: 'Poppins';
+    font-weight: bolder ;
+    font-size: 20px;
+    height: 10vh;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
+    margin-top: 0;
+}
+
+.mainHeader ul {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
     cursor: pointer;
     height: 100%;
+    
 }
 
-.mainHeader .Link {
-    transition: .4s ease color;
-    text-decoration: none;
-    text-emphasis: none;
-    
-    
+.head {
+    color: #ddd;
 }

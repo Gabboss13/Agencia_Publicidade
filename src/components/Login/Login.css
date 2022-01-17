@@ -82,7 +82,7 @@
   }
 }
 
-.form {
+.form-login {
   margin: 40px;
   position: absolute;
 }
@@ -106,7 +106,16 @@ input {
   width: 100%;
 }
 
-.form .submit {
+small{
+  text-align: center;
+  margin-left: 30px;
+  font-family: 'Roboto';
+}
+a {
+  text-decoration: none;
+}
+
+ .form-login .submit {
   color: #ddd;
   font-family: "Effra Medium";
   font-weight: 150;
@@ -114,11 +123,15 @@ input {
   margin-top: 40px;
   transition: color 300ms;
   background-color: rgba(67, 38, 58, 0.8);
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  width: 100%;
   cursor:pointer
 }
-.form .submit:focus {
+.form-login .submit:focus {
   color: #f2f2f2;
 }
-.form .submit:active {
+.form-login .submit:active {
   color: #d0d0d2;
 }

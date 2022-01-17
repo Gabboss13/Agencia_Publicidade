@@ -19,7 +19,7 @@ export const StyledForm = styled.div`
         padding: 15px;
     }
   
-    input{
+    .input-form{
         border: none;
         border-radius: 2px;
         width: 100%;

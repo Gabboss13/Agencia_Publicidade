@@ -4,13 +4,13 @@ import './style.css'
 
 export default function NotFound() {
     return(
-       <body>
+       <body className='body-notfound'>
             <div className="box1">
             <div className="box2">
             <h1> 404 </h1>
             <p> Você se perdeu? Essa página não existe! </p>
             <img src={errorImg} alt="erro" />
-            <button>Voltar</button>
+            <button className='btn-notfound'>Voltar</button>
             </div>
             </div>
         </body>
