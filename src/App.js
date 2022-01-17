@@ -8,6 +8,7 @@ import NotFound from './components/NotFound/NotFound.jsx'
 import Contact from './components/Contact/Contact';
 import Products from './components/Products/Products';
 import Login from './components/Login/Login';
+import Clientes from './components/Cliente/Cliente';
 
 
 export default class App extends Component{
@@ -27,6 +28,7 @@ export default class App extends Component{
                 <Route path= "/signup" element={<Login />} />
                 <Route path= "/contato" element ={<Contact /> } />
                 <Route path="/*"element={<NotFound />} />
+                <Route path = '/clientes' element={<Clientes />} />
             </Routes> 
           </Router>
           {/* <Footer /> */}
