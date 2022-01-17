@@ -15,8 +15,7 @@ export default () =>{
           <input type="email" id="email" required />
           <label for="password">Password</label>
           <input type="password" id="password" required />
-          {/* <input  className="submit"  type= "submit" value="Enviar" /> */}
-          <button className="submit">Enviar</button>
+          <button className="submit"><Link to="/clientes">Enviar</Link></button>
           <small>Esqueceu a senha, clique <a>aqui!</a></small>
         </form>
       </div>

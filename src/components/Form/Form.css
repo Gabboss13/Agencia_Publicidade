@@ -1,16 +1,14 @@
-import styled from 'styled-components'
 
-
-export const StyledForm = styled.div`
+    .body-form {
     display: grid;
-    place-items: start-end;
     background-size: cover;
+    }
     
     .box3 {
     width: 40%;
     padding: 20px;
     box-shadow: 0 0 5px 0 ;
-    margin: 30px auto 30px 30px;
+    margin:20px auto;
     background-color: rgba(67, 38, 58, 0.8);
     }
 
@@ -29,7 +27,7 @@ export const StyledForm = styled.div`
     }
 
 
-    placeholder {
+    .placeholder {
         color: rgba(255, 255, 255, 0.4)
     }
     
@@ -63,4 +61,17 @@ export const StyledForm = styled.div`
         color:rgba(255,255,255, 0.7);
         font-family: 'Roboto', sans-serif;
     }
-`
+
+    .btn-forms{
+    color: #ddd;
+    font-family: "Effra Medium";
+    font-weight: 150;
+    font-size: larger;
+    margin: 10px 15px 20px;
+    background-color: rgba(67, 38, 58, 0.8);
+    box-shadow: 2px 3px rgba(0,0,0,0.4);
+    border: none;
+    height: 30px;
+    width: 95%;
+    cursor:pointer
+    }
