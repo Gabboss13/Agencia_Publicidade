@@ -6,6 +6,7 @@ export default function Header () {
         return (
             <header className={style.mainHeader}>
                 <ul>
+                    <Link to="/home" className={style.head}>Home</Link>
                     <Link to="/produtos" className={style.head}>Projetos</Link>
                     <Link to="/cadastro" className={style.head}>Cadastro</Link>
                     {/* <Link to="/">
