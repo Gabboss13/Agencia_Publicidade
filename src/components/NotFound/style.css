@@ -1,3 +1,5 @@
+
+
 .body-notfound {
   margin: 0;
   display: grid;
@@ -26,20 +28,22 @@
   align-items: center;
 }
 
-img {
+.img-notfound {
   width: 50%;
   height: auto;
-  margin: 0 0 15px;
+  margin: 0 0 25px;
 }
 
-h1 {
-  font-family: 'Poppins', sans-serif;
+.title-notfound {
+  font-family: 'Roboto';
+  color: rgb(32, 31, 31);
   font-size: 54px;
   margin: 0;
 }
 
-p {
+.sub-notfound {
   font-family: 'Poppins', sans-serif;
+  color: rgba(53, 50, 50, 0.76);
   font-size: 20px;
   width: 35%;
   margin: 16px auto 24px;
@@ -47,13 +51,20 @@ p {
 }
 
 .btn-notfound {
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 8px 24px;
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+  font-size: 13px;
   cursor: pointer;
   background-color: rgba(67, 38, 58, 0.8);
   color: #ccc;
   border: none;
-  box-shadow: 0 4px 8px 0 RGB(218, 170, 60); 
+  box-shadow: 0 4px 8px 0 rgba(48, 46, 46, 0.473); 
+}
+
+.btn-notfound a{
+  height: fit-content;
+  width: fit-content;
+  padding: 0px;
 }

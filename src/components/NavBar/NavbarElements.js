@@ -9,7 +9,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  border-radius: 0 0  10px 10px ;
   
 `;
 
@@ -18,6 +17,8 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-family:'Poppins';
+  font-size: 15px;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
@@ -25,6 +26,8 @@ export const NavLink = styled(Link)`
     color: #EDDF4A;
   }
 `;
+
+
 
 export const Bars = styled(FaBars)`
   display: none;

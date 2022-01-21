@@ -2,14 +2,14 @@ import './App.css'
 import React, { Component } from 'react'
 import Navbar from './components/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages';
+import Home from './components/Home/Home';
 import { FooterContainers } from './Containers/footer';
-import About from "./pages/about";
-import Services from "./pages/service";
+import Products from "./components/Products/Products";
 import Contact from "./components/Contact/contact";
-import Sign from "./pages/sign";
-import SignUp from "./pages/signup";
+import Sign from "./components/Login/Login";
 import Form from './components/Form/Form'
+import NotFound from './components/NotFound/NotFound.jsx'
+import Clientes from './components/Cliente/Cliente';
 
 
 
@@ -22,12 +22,12 @@ export default class App extends Component{
                 <Navbar />
                 <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/about" element={<About/>} />
-                <Route path="/services" element={<Services/>}/>
-                <Route path="/Contact" element={<Contact/>}/>
-                <Route path="/sign-up" element={<Sign/>}/>
-                <Route path="/signin" element={<SignUp/>}/>
-                <Route path="/forme" element={<Form/>} />
+                <Route path="/products" element={<Products/>}/>
+                <Route path="/contact" element={<Contact/>}/>
+                <Route path="/sign" element={<Sign/>} />
+                <Route path="/form" element={<Form/>} />
+                <Route path="/*"element={<NotFound />} />
+                <Route path = '/clientes' element={<Clientes />} />
 
                 </Routes>
             </Router>

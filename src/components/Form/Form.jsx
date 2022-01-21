@@ -1,6 +1,5 @@
 import React, {useState } from 'react'
 import'./Form.css'
-// import axios from 'axios';
 
  export default () => {
 
@@ -77,22 +76,13 @@ import'./Form.css'
             </form>
             <div className='box4'>
                 
-                <div>
-
-                    <p>Já é cadastrado?<a href= '../pages/sign.js'> Entra aí!</a></p> 
-
-                    <p>Já é cadastrado?<a href='../pages/sign.js'> Entra aí!</a></p> 
-
+                <div > 
+                  <p>Já é cadastrado? <a href='/sign'>Entra ai!</a></p> 
                 </div>
                 <small>Ao criar o seu cadastro, você concorda com a nossa Política de Privacidade.</small>
             </div>
                 </div>
             </div>
-           // ATENÇÃO!!!!! lembrar de colocar o caminho da página signin no href acima!!!!
         )
 }
 
-//validar o formulário
-//conectar a API
-//Hover
-//botão submit
