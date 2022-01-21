@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './style.module.css'
+import styles from '../Contact/style.module.css'
 import avatar1 from '../../assets/images/avatar1.jpg'
 import avatar2 from '../../assets/images/avatar2.jpg'
 import avatar3 from '../../assets/images/avatar3.jpg'

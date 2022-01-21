@@ -10,13 +10,14 @@
 }
 
 .page {
-  background: #e2e2e5;
+  
   display: flex;
   flex-direction: column;
   height: calc(100% - 40px);
-  position: absolute;
+  margin-top: 15%;
   place-content: center;
   width: calc(100% - 40px);
+  
 }
 @media (max-width: 767px) {
   .page {
@@ -39,11 +40,12 @@
   }
 }
 .left {
-  background: white;
+  background: #5f2f5865;
   height: calc(100% - 50px);
   top: 20px;
   position: relative;
   width: 50%;
+  border-radius: 10px;
 }
 @media (max-width: 767px) {
   .left {
@@ -58,12 +60,14 @@
   font-size: 50px;
   font-weight: 900;
   margin: 50px 40px 40px;
+  color:#EDDF4A ;
 }
 .eula {
   color: #999;
   font-size: 14px;
   line-height: 1.5;
   margin: 40px;
+  
 }
 .right {
   background: #474A59;
@@ -72,6 +76,8 @@
   position: relative;
   width: 50%;
   height: 95%;
+  border-radius: 10px;
+
 }
 @media (max-width: 767px) {
   .right {
@@ -104,15 +110,21 @@ input {
   height: 30px;
   line-height: 30px;
   width: 100%;
+  border-radius: 10px;
+  
+
+
 }
 
 small{
   text-align: center;
   margin-left: 30px;
   font-family: 'Roboto';
+  
 }
 a {
   text-decoration: none;
+  color: yellow;
 }
 
  .form-login .submit {
