@@ -78,7 +78,11 @@ import'./Form.css'
             <div className='box4'>
                 
                 <div>
-                    <p>Já é cadastrado?<a href="/signup"> Entra aí!</a></p> 
+
+                    <p>Já é cadastrado?<a href= '../pages/sign.js'> Entra aí!</a></p> 
+
+                    <p>Já é cadastrado?<a href='../pages/sign.js'> Entra aí!</a></p> 
+
                 </div>
                 <small>Ao criar o seu cadastro, você concorda com a nossa Política de Privacidade.</small>
             </div>

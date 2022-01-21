@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Effra Medium';
     font-style: normal;
     font-weight: normal;
@@ -7,7 +7,7 @@
 
 .mainHeader { 
     background-color:  rgba(67, 38, 58, 0.8);
-    color: var(--black);
+     color: var(--black); 
     font-family: 'Poppins';
     font-weight: bolder ;
     font-size: 20px;
@@ -28,4 +28,4 @@
 
 .head {
     color: #ddd;
-}
+} */
