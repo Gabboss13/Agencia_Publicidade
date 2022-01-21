@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../Contact/style.module.css'
+import styles from './style.module.css'
 import avatar1 from '../../assets/images/avatar1.jpg'
 import avatar2 from '../../assets/images/avatar2.jpg'
 import avatar3 from '../../assets/images/avatar3.jpg'
@@ -8,8 +8,8 @@ import linkedin from  '../../assets/images/linkedin.png'
 
 export default function Contact() {
   return (
-    <><div className={styles.main}>
-      <div className={styles.titulo}>
+    <><div className={styles.mainContact}>
+      <div className={styles.tituloTime}>
         <h1> Conheça o nosso time!</h1>
       </div>
       <div className={styles.persona1}>
