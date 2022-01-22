@@ -3,8 +3,6 @@ import styles from './style.module.css'
 import avatar1 from '../../assets/images/avatar1.jpg'
 import avatar2 from '../../assets/images/avatar2.jpg'
 import avatar3 from '../../assets/images/avatar3.jpg'
-import github from '../../assets/images/github.png'
-import linkedin from '../../assets/images/linkedin.png'
 
 export default function contact() {
   return (
