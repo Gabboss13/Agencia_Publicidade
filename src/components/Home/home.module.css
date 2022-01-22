@@ -1,57 +1,50 @@
-.main {
-    padding: 22%;
-    display: flex;
+.estrutura1 {
     background: transparent linear-gradient(258deg, rgba(67, 38, 58) 0%, #6d0b5d 100%) 0% 0% no-repeat padding-box;
-}
-a{
-    color: rgba(255,255,255,0.8);;
-    font-size: 25px;
-    padding: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
     display: flex;
-    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+.titul{
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    font-size: 40px;
+	color: rgb(231, 191, 14);;
+}
+.caixaTexto{
+    padding: 60px 60px;
 }
 
-.titulo h1 {
-    font-family: 'Poppins';
-    
-  }
-  h1 {
-    padding: 10px;
-    font-family: 'Poppins', sans-serif;
+.caixaTexto2 {
+    text-align: justify;
+    font-family: "Effra Medium";
+    color: rgba(255,255,255, 0.8);
+    font-size: 24px;
+    font-weight: 100;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1)
+}
+
+.PlanoHome {
+    margin: 100px;
+    height: 10%;
+}
+
+.linhaHome {
+    text-decoration: underline;
+	color: rgb(231, 191, 14);;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: rgb(226, 171, 19);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1)
+}
+.final{
+    padding: 20px;
+    font-size: 25px;
+    font-family: "Effra Medium";
+    color: rgba(255,255,255, 0.8);
     text-shadow: 0px 4px 3px rgb(0 0 0 / 40%), 0px 8px 13px rgb(0 0 0 / 10%), 0px 18px 23px rgb(0 0 0 / 10%);
-  }
-.icon {
-    padding: 10%;
-    display: flex;
-    width: 50%;
-  }
-.img{
-    padding: 6.5rem;
-    width: 60%;
-}
-.containerPlano {
-   display: flex;
-    padding: 1.5rem;
-    height: auto;
-    color: rgba(255,255,255,0.8);;
-    background: rgba(67, 38, 58);;
-    align-content: center;
-}
-.coluna {
-    width: 100%;
-    display: flex;
-}
-.Plano1,
-.Plano2,
-.Plano3{
-    padding: 2em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 2px solid rgb(240, 235, 235);
-    flex-direction: column;
-    border-radius: 10px;
 }
