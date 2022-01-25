@@ -9,6 +9,8 @@ border-radius: 10px 10px 0 0 ;
 box-shadow: 10px 10px 0 0  rgba(49, 44, 44, 0.623);
 
 
+
+
 `
 
 export const Wrapper = styled.div`
@@ -22,7 +24,7 @@ margin:0 auto;
 export const Column = styled.div`
 display:flex;
 flex-direction:column;
-text-align:left;
+text-align:center;
 margin-left:60px;
 `
 
@@ -57,5 +59,7 @@ font-size:18px;
 margin-bottom:40px;
 font-weight:bold;
 font-family: 'Nunito', sans-serif;
+text-align: center;
+color: #EDDF4A;
 
 `
