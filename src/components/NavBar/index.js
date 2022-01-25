@@ -1,13 +1,12 @@
 import React from 'react'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink}  from './NavbarElements.js';
-//<img src='' alt=''/>   
-        
+import { Icon } from "../icons/styles/icons";
 const Navbar = () => {
     return( 
         <>
         <Nav>
           <NavLink to="/" activeStyle>
-          <h1>Siga</h1>
+          <h1><Icon className="fas fa-fish"/>Siga</h1>
           </NavLink>
 
             <Bars />

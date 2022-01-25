@@ -2,9 +2,9 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(5, 0.5fr);
+  grid-template-rows: repeat(5, 0.5fr);
+  grid-column-gap: 10px;
   grid-row-gap: 0px;
   align-items: center;
 }
